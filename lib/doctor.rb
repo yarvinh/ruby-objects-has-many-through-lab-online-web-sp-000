@@ -8,9 +8,9 @@ class Doctor
   def self.all
     @@all
   end
-#   def songs
-#      Song.all.select{|song|song.artist == self || song.genre == self }
-#   end
+   def appointments
+      Appointment.all.select{|Appointment|appointment.doctor == self || song.genre == self }
+   end
 #   def new_song(song,genres)
 #     Song.new(song,self,genres)
 # end
