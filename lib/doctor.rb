@@ -14,7 +14,7 @@ class Doctor
    def new_appointment(patient,date)
       Appointment.new(date,patient,self)
    end
-# def genres
-#   songs.map{|song|song.genre}
-# end
+def patients
+  appointments.map{|appointment|appointment.patient}
+end
 end
