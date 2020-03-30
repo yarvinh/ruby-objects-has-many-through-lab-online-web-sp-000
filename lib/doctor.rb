@@ -9,7 +9,7 @@ class Doctor
     @@all
   end
    def appointments
-      Appointment.all.select{|appointment|appointment.doctor == self || song.genre == self }
+      Appointment.all.select{|appointment|appointment.doctor == self}
    end
 #   def new_song(song,genres)
 #     Song.new(song,self,genres)
