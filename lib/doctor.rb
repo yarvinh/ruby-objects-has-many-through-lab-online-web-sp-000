@@ -12,7 +12,7 @@ class Doctor
       Appointment.all.select{|appointment| appointment.doctor == self || appointment.patient == self}
    end
    def new_appointment(patient,date)
-      Appointment.new(patient,self,date)
+      Appointment.new(date,patient,self)
    end
 # def genres
 #   songs.map{|song|song.genre}
